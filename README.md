@@ -1,0 +1,1 @@
+The structure and some code is copied from https://github.com/jessfraz/dockerfiles - That is under MIT https://github.com/jessfraz/dockerfiles/blob/master/LICENSE

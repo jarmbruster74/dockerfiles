@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-saml2aws configure --idp-provider=ADFS --mfa=Auto --url=https://adfs.intelematics.com/adfs/ls/idpinitiatedsignon.aspx --username="$USERNAME" --skip-prompt
-saml2aws login --profile=default --password="$PASS" --role=arn:aws:iam::"$ACCOUNT":role/ADFS-Administrator --skip-prompt
+saml2aws configure --idp-provider=Shibboleth --mfa=Auto --url=https://fedauth.colorado.edu --username="$USERNAME" --skip-prompt
+saml2aws login --profile=default 
 
 terraform init \
 	-backend-config "bucket=$STATE_BUCKET" \
